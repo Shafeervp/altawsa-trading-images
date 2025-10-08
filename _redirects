@@ -1,0 +1,22 @@
+# _redirects file for altawsa-trimg.netlify.app
+# This file should be placed at the root of your third-party Netlify asset host
+
+# Square category/product images (380x380 display size)
+# Using 760x760 for 2x DPR (retina displays)
+/Catagory-images-sqr/*  /.netlify/images?url=https://altawsa-trimg.netlify.app/Catagory-images-sqr/:splat&w=760&h=760&fit=cover&q=60&fm=webp  200
+
+# PPR product images (380x380 display size)
+# Using 760x760 for 2x DPR (retina displays)
+/ppr-products/*  /.netlify/images?url=https://altawsa-trimg.netlify.app/ppr-products/:splat&w=760&h=760&fit=cover&q=60&fm=webp  200
+
+# Rectangle category images (380x304 display size)
+# Using 760x608 for 2x DPR (retina displays)
+/catagory-images/*  /.netlify/images?url=https://altawsa-trimg.netlify.app/catagory-images/:splat&w=760&h=608&fit=cover&q=60&fm=webp  200
+
+# Instructions:
+# 1. Copy this file's contents (excluding these comments if preferred)
+# 2. Create a file named "_redirects" (no extension) at the root of altawsa-trimg.netlify.app
+# 3. Deploy the site
+# 4. Verify transforms are working with: curl -I https://altawsa-trimg.netlify.app/Catagory-images-sqr/upvc-pressure-pipes.webp
+# 5. You should see much smaller Content-Length in response headers
+
