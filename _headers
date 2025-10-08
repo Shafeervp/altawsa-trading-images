@@ -1,0 +1,30 @@
+# _headers file for altawsa-trimg.netlify.app
+# This file should be placed at the root of your third-party Netlify asset host
+
+# Long-term caching for category square images
+/Catagory-images-sqr/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Long-term caching for PPR product images
+/ppr-products/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Long-term caching for category rectangle images
+/catagory-images/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Long-term caching for Netlify Image CDN transformed images
+/.netlify/images
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Instructions:
+# 1. Copy this file's contents (excluding these comments if preferred)
+# 2. Create a file named "_headers" (no extension) at the root of altawsa-trimg.netlify.app
+# 3. Deploy the site
+# 4. Verify headers with: curl -I https://altawsa-trimg.netlify.app/Catagory-images-sqr/upvc-pressure-pipes.webp
+# 5. You should see "Cache-Control: public, max-age=31536000, immutable" in response
+
